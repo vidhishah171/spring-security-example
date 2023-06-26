@@ -56,6 +56,21 @@
 			<artifactId>spring-boot-starter-jdbc</artifactId>
 			<version>3.1.0</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.unboundid/unboundid-ldapsdk: It'll setup a local instance of ldap for us to use. -->
+		<dependency>
+			<groupId>com.unboundid</groupId>
+			<artifactId>unboundid-ldapsdk</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.ldap/spring-ldap-core: Spring integration library that works with ldap. -->
+		<dependency>
+			<groupId>org.springframework.ldap</groupId>
+			<artifactId>spring-ldap-core</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-ldap: Helps spring security to integrate with ldap. -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-ldap</artifactId>
+		</dependency>
 
 	</dependencies>
 
