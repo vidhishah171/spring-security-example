@@ -56,22 +56,36 @@
 			<artifactId>spring-boot-starter-jdbc</artifactId>
 			<version>3.1.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.unboundid/unboundid-ldapsdk: It'll setup a local instance of ldap for us to use. -->
+		<!-- https://mvnrepository.com/artifact/com.unboundid/unboundid-ldapsdk: 
+			It'll setup a local instance of ldap for us to use. -->
 		<dependency>
 			<groupId>com.unboundid</groupId>
 			<artifactId>unboundid-ldapsdk</artifactId>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.springframework.ldap/spring-ldap-core: Spring integration library that works with ldap. -->
+		<!-- https://mvnrepository.com/artifact/org.springframework.ldap/spring-ldap-core: 
+			Spring integration library that works with ldap. -->
 		<dependency>
 			<groupId>org.springframework.ldap</groupId>
 			<artifactId>spring-ldap-core</artifactId>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-ldap: Helps spring security to integrate with ldap. -->
+		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-ldap: 
+			Helps spring security to integrate with ldap. -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-ldap</artifactId>
 		</dependency>
-
+		<!-- library that lets me create jwt and also validate existing jwts. Equivalent for jwt.io -->
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
+		</dependency>
+		<!-- jaxb apis to be available in classpath. Not inside jdk in java version 9+ -->
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
